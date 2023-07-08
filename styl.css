@@ -12,7 +12,7 @@ body {
     background-color: rgb(240, 248, 255);
     color: black; 
     font-family: 'Times New Roman', Times, serif;
-}
+  }
 
 
 ul {
@@ -103,6 +103,8 @@ ul {
   height: auto;
 }
 
+
+
 .footer {
   position: fixed;
   left: 0;
@@ -111,8 +113,9 @@ ul {
   background-color: darkslategrey;
   color: white;
   text-align: none;
-  padding: 0px;
+  padding: 15px;
   }
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .img-container, .box {   
@@ -134,15 +137,15 @@ ul {
 /* Left column */
 .leftcolumn {   
   float: left;
-  width: 75%;
+  width: 70%;
 }
 
 /* Right column */
 .rightcolumn {
   float: right;
-  width: 25%;
+  width: 30%;
   background-color: #f1f1f1;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 /* Add a card effect for articles */
@@ -175,7 +178,6 @@ ul {
     width: 100%;
   }
 }
-
 
 
 /* Style all font awesome icons */
@@ -300,6 +302,7 @@ html {
   padding: 50px;
   text-align: center;
   font-weight: bold;
+  font-size: large;
   background-image: url(../images/viflag.jpg);
   background-repeat: no-repeat;
   background-size:cover;
@@ -311,7 +314,7 @@ div.transbox {
   margin: 10px;
   background-color: #ffffff;
   border: 1px solid black;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 div.transbox h1 {
@@ -365,11 +368,11 @@ div.transbox p {
 
 /* background to the top navigation */
 .topnav {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: darkslategray;
+  background-color: slategray;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%; 
   padding: 0%;
 }
 
@@ -411,6 +414,66 @@ div.transbox p {
   }
 }
 
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style inputs with type="email", select elements and textareas */
+input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: plum;
+  color: white;
+  padding: 12px 20px;
+  width: 100%;
+  font-weight: 700;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: slategrey;
+}
+
+.error {
+  border-color: #bb0000;
+}
+
+.error-message {
+  border-color: #bb0000;
+  margin: -1em 0 1.5em;
+}
+
+
+/* Add a background color and some padding around the form */
+.container-2 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 
 
 

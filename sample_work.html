@@ -19,9 +19,15 @@
    </header>
  
    <main>
-       <div class="row">
+       
+        <div class="row">
         <div class="leftcolumn">
           <div class="card">
+            <h2>My Literary Journey</h2>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/E5PSYQBpm4k" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+            <div class="card">
             <h2>Lib Guide Emancipation and Post Slavery</h2>
             <h5>Work completed for the MLIS program at Wayne State University</h5>
             <iframe src="https://waynesis.libguides.com/c.php?g=1239562&p=9075581" height="315" width="100%" title="Iframe Example"></iframe>
@@ -30,7 +36,7 @@
                learning about the Panama Canal and the Caribbean. It includes .... </p>
           </div>
           <div class="card">
-            <h2>Presentation The Evoution of Reference Work</h2>
+            <h2>Presentation The Evolution of Reference Work</h2>
             <h5>A presentation about the evolution of reference work.</h5>
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/2tPWFc2m3ts" title="YouTube video player" 
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
@@ -46,27 +52,48 @@
         </div>
         <div class="rightcolumn">
           <div class="card">
-            
-            <img src="images/edu_philo.jpg" alt=" Philosphy" width="175px">
+            <h3>Working on MLIS</h3>
+            <img src="images/WSU_logo.jpg" alt=" Wayne logo" class="responsive" width="max">
             
           </div>
           <div class="card">
-             <img src="images/VIDE_log.jpg" alt=" pic of logo" width="175px">
+            <h3>Place of Employment</h3>
+             <img src="images/VIDE_log.jpg" alt=" pic of logo" class="responsive" width="max">
           </div>
           <div class="card">
-            <img src="images/CHS_logo.png" alt=" pic of logo" width="175px">
+            <h3>Assigned to Charlotte Amalie High School</h3>
+            <img src="images/CHS_logo.png" alt=" pic of logo" class="responsive" width="max">
           </div>
           
           <div class="card">
             <h3>Follow Me</h3>
             <div>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+          
             <!-- Add font awesome icons -->
             <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
             <a href="https://www.twitter.com/#" class="fa fa-twitter"></a>
             <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
             <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        </div>
+        <h3>Want more information?</h3>
+        <div class="container-2">
+          <form action="https://formspree.io/f/meqbqage" method="post" class=".validate">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="replyto" required>
+            
+            <label for="message">Message</label>
+            <textarea type="message" name="message"
+            rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+          </form>
         </div>
           </div>
         </div>
@@ -74,8 +101,8 @@
    </main>
    
    <div class="footer">
-        
-    <p>© May, 2023</p>
+      <p>© May, 2023</p>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
