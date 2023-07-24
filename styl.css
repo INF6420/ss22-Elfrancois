@@ -54,6 +54,7 @@ ul {
     border-radius: 8px;
   }
 
+
   
   .img-container {
     float: left;overflow: auto;
@@ -98,6 +99,15 @@ ul {
 
 }
 
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .quote, .box {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
 .responsive {
   max-width: 100%;
   height: auto;
@@ -110,7 +120,7 @@ ul {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: darkslategrey;
+  background-color: black;
   color: white;
   text-align: none;
   padding: 15px;
@@ -257,7 +267,12 @@ hr.solid {
 }
 
 h3 {
+  text-align: left;
+}
+.header3 {
   text-align: center;
+  font-weight: bold;
+
 }
 
 
@@ -292,9 +307,7 @@ html {
   padding: 20px;
   text-align: center;
   font-weight: bold;
-  background-image: url(../images/southview.png);
-  background-repeat: no-repeat;
-  background-size:cover;
+  background-image: linear-gradient(to right, rgba(263,55,60,0), rgba(63,142,191,11));
   overflow: auto; 
   color: whitesmoke;
 }
@@ -303,16 +316,13 @@ html {
   text-align: center;
   font-weight: bold;
   font-size: large;
-  background-image: url(../images/viflag.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
   overflow: auto; 
   color: whitesmoke;
 }
 
 div.transbox {
   margin: 10px;
-  background-color: #ffffff;
+  background-color: honeydew;
   border: 1px solid black;
   opacity: 0.9;
 }
@@ -368,7 +378,7 @@ div.transbox p {
 
 /* background to the top navigation */
 .topnav {
-  background-color: slategray;
+  background-color: black;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -383,6 +393,7 @@ div.transbox p {
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
+  text-transform: capitalize;
   text-decoration: none;
   font-size: 17px;
 }
@@ -396,7 +407,7 @@ div.transbox p {
 /* Active class to highlight the current page */
 .topnav a.active {
   background-color: plum;
-  color: white;
+  color: darkblue;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
